@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,6 +53,7 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\BaseActivity.cs" />
+    <Compile Include="Util\LogUtils.cs" />
     <Compile Include="Util\UIUtils.cs" />
     <Compile Include="UI\HomeActivity.cs" />
   </ItemGroup>
@@ -65,7 +66,9 @@
     <None Include="Resources\drawable\announcements_previous_button.xml" />
     <None Include="Resources\drawable\bezel_border.xml" />
     <None Include="Resources\drawable\clickable_dashed_background.xml" />
-    <None Include="Resources\drawable\grey_background_pattern.xml" />
+    <None Include="Resources\drawable\grey_background_pattern.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Resources\drawable\grey_frame_on_white_empty_sandbox.xml" />
     <None Include="Resources\drawable\grey_frame_on_white_empty_sessions.xml" />
     <None Include="Resources\drawable\list_extra_button_background.xml" />
@@ -190,16 +193,5 @@
     <AndroidResource Include="Resources\drawable-xhdpi-v11\ic_stat_notification.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="UI\" />
-    <Folder Include="Util\" />
-    <Folder Include="Resources\drawable-hdpi\" />
-    <Folder Include="Resources\drawable-hdpi-v11\" />
-    <Folder Include="Resources\drawable-mdpi\" />
-    <Folder Include="Resources\drawable-mdpi-v11\" />
-    <Folder Include="Resources\drawable-nodpi\" />
-    <Folder Include="Resources\drawable-v14\" />
-    <Folder Include="Resources\drawable-xhdpi\" />
-    <Folder Include="Resources\drawable-xhdpi-v11\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>
