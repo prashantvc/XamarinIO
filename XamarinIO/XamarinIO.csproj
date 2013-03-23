@@ -50,9 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Provider\ScheduleContract.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\BaseActivity.cs" />
+    <Compile Include="UI\MyScheduleFragment.cs" />
     <Compile Include="Util\LogUtils.cs" />
     <Compile Include="Util\UIUtils.cs" />
     <Compile Include="UI\HomeActivity.cs" />
@@ -60,26 +62,28 @@
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <None Include="Resources\drawable\actionbar_background.xml" />
-    <None Include="Resources\drawable\activatable_item_background.xml" />
-    <None Include="Resources\drawable\announcements_next_button.xml" />
-    <None Include="Resources\drawable\announcements_previous_button.xml" />
-    <None Include="Resources\drawable\bezel_border.xml" />
-    <None Include="Resources\drawable\clickable_dashed_background.xml" />
-    <None Include="Resources\drawable\grey_background_pattern.xml">
+    <AndroidResource Include="Resources\drawable\actionbar_background.xml" />
+    <AndroidResource Include="Resources\drawable\activatable_item_background.xml" />
+    <AndroidResource Include="Resources\drawable\announcements_next_button.xml" />
+    <AndroidResource Include="Resources\drawable\announcements_previous_button.xml" />
+    <AndroidResource Include="Resources\drawable\bezel_border.xml" />
+    <AndroidResource Include="Resources\drawable\clickable_dashed_background.xml" />
+    <AndroidResource Include="Resources\drawable\grey_background_pattern.xml">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Resources\drawable\grey_frame_on_white_empty_sandbox.xml" />
-    <None Include="Resources\drawable\grey_frame_on_white_empty_sessions.xml" />
-    <None Include="Resources\drawable\list_extra_button_background.xml" />
-    <None Include="Resources\drawable\schedule_time_background.xml" />
-    <None Include="Resources\drawable\session_detail_header_background.xml" />
-    <None Include="Resources\drawable\tab_color.xml" />
-    <None Include="Resources\drawable\tab_white_ab.xml" />
-    <None Include="Resources\drawable\thickbar_left_background.xml" />
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\grey_frame_on_white_empty_sandbox.xml" />
+    <AndroidResource Include="Resources\drawable\grey_frame_on_white_empty_sessions.xml" />
+    <AndroidResource Include="Resources\drawable\list_extra_button_background.xml" />
+    <AndroidResource Include="Resources\drawable\schedule_time_background.xml" />
+    <AndroidResource Include="Resources\drawable\session_detail_header_background.xml" />
+    <AndroidResource Include="Resources\drawable\tab_color.xml" />
+    <AndroidResource Include="Resources\drawable\tab_white_ab.xml" />
+    <AndroidResource Include="Resources\drawable\thickbar_left_background.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\Main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_action_add_schedule.png" />
@@ -193,5 +197,35 @@
     <AndroidResource Include="Resources\drawable-xhdpi-v11\ic_stat_notification.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\list_item_schedule_block.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values-large-v11\styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\compat.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\analytics.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\attrs.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\bools.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\integers.xml" />
+  </ItemGroup>
   <ItemGroup />
 </Project>
